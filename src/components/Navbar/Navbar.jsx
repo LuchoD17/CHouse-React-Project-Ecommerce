@@ -1,7 +1,10 @@
 import React from 'react'
 import { Wrapper, Container, LogoContainer, Menu, MenuItem, MenuItemLink } from './navbar.elements'
-import { FaJediOrder } from "react-icons/fa";
+import { FaJediOrder } from "react-icons/fa"
 import {IconContext} from 'react-icons'
+import CartWidget from '../Cart/CartWidget'
+
+
 
 const Navbar = () => {
     return (
@@ -27,6 +30,9 @@ const Navbar = () => {
                 <MenuItem>
                     <MenuItemLink>CONTACTENOS</MenuItemLink>
                 </MenuItem>
+                <CartWidget nameCart="CARRITO"></CartWidget>
+                
+                
             </Menu>
             </IconContext.Provider>
             </Wrapper>
