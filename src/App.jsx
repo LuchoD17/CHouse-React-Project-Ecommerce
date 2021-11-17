@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import Efecto from './components/Efecto';
 
 function App() {
   return(
@@ -10,16 +11,11 @@ function App() {
     <Navbar />
     <ItemListContainer greeting="Ecommerce Siglo 21" />
     <ItemCount />
+    <Efecto stock={10} inicial={0}/>
     </>
     )
 }
 export default App
-
-
-
-
-
-
 
 
 
