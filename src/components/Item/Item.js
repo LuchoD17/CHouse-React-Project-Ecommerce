@@ -34,7 +34,7 @@ const Item = ({ item }) => {
                         <h1 className="cardTitle">{item.name}</h1>
                         <p class="cardDescription">{item.description}</p>
                         <span className="cardPrice">{item.price}</span>
-                        <a href="#" className="cardButton">More Products</a>
+                        <a href="{item.img}" className="cardButton">More Products</a>
                     </div>
                 </div>
             </div>
