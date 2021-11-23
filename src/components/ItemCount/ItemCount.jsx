@@ -1,18 +1,29 @@
 import { useState } from 'react'
-function ItemCount (){
-    const [number, setNumber] = useState(10)
+
+const ItemCount = () =>{
+    const [number, setNumber] = useState(0)
     
     const sumar = () => {
-        setNumber (number + 1)
+        if (number < 10) {
+            setNumber (number + 1)
+        }
+        else {
+            setNumber (10)
+        }
     }
     
     const restar = () => {
-        setNumber (number - 1)
+        if (number > 0) {
+            setNumber (number - 1)
+        }
+        else {
+            setNumber (0)
+        }
     }
     return (
         <>
-        <button onClick={sumar}>+</button>
         <h1>{number}</h1>
+        <button onClick={sumar}>+</button>
         <button onClick={restar}>-</button>
         </>
     )

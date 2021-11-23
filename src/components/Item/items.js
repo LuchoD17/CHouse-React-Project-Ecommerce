@@ -1,6 +1,7 @@
 export const products = [
     {
         name: 'Foto 10x15',
+        description: 'photo',
         price: 100,
         stock: 100,
         id: 1,
@@ -8,6 +9,7 @@ export const products = [
     },
     {
         name: 'Foto 13x18',
+        description: 'photo',
         price: 160,
         stock: 120,
         id: 2,
@@ -15,6 +17,7 @@ export const products = [
     },
     {
         name: 'Foto 20x30',
+        description: 'photo',
         price: 200,
         stock: 50,
         id: 3,
